@@ -1,0 +1,17 @@
+{
+    "model_name": "Logistic Regression",
+    "evaluation_date": "2025-12-30T18:09:29.715472",
+    "metrics": {
+        "accuracy": 0.645,
+        "precision": 0.24967824967824967,
+        "recall": 0.6043613707165109,
+        "f1_score": 0.3533697632058288,
+        "auc_roc": 0.6879688436411674,
+        "average_precision": 0.29618207644543415,
+        "brier_score": 0.2170828740295165,
+        "gini_coefficient": 0.3759376872823348,
+        "ks_statistic": 0.2956106123100273,
+        "lift_at_10": 2.0560747663551404,
+        "capture_rate_at_10": 0.205607476635514
+    }
+}

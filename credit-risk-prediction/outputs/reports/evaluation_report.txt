@@ -1,0 +1,61 @@
+
+================================================================================
+                      CREDIT RISK MODEL EVALUATION REPORT
+================================================================================
+
+Model: Logistic Regression
+Evaluation Date: 2025-12-30 18:09:29
+
+--------------------------------------------------------------------------------
+1. PERFORMANCE METRICS
+--------------------------------------------------------------------------------
+
+Classification Metrics:
+  - Accuracy:           0.6450
+  - Precision:          0.2497
+  - Recall:             0.6044
+  - F1-Score:           0.3534
+
+Discriminatory Power:
+  - AUC-ROC:            0.6880
+  - Gini Coefficient:   0.3759
+  - KS Statistic:       0.2956
+
+Calibration:
+  - Brier Score:        0.2171
+  - Average Precision:  0.2962
+
+Lift Metrics:
+  - Lift at 10%:        2.06x
+  - Capture Rate at 10%:20.6%
+
+--------------------------------------------------------------------------------
+2. CONFUSION MATRIX
+--------------------------------------------------------------------------------
+
+              precision    recall  f1-score   support
+
+  No Default       0.90      0.65      0.76      1679
+     Default       0.25      0.60      0.35       321
+
+    accuracy                           0.65      2000
+   macro avg       0.57      0.63      0.55      2000
+weighted avg       0.79      0.65      0.69      2000
+
+
+--------------------------------------------------------------------------------
+3. MODEL INTERPRETATION
+--------------------------------------------------------------------------------
+
+Risk Score Interpretation:
+- AUC-ROC of 0.6880 indicates fair discriminatory power
+- Gini coefficient of 0.3759 suggests the model effectively separates defaulters from non-defaulters
+- KS statistic of 0.2956 shows moderate separation between classes
+
+Business Impact:
+- At 10% cutoff, the model captures 20.6% of all defaults
+- Lift of 2.06x means top 10% of predictions are 2.06 times more likely to default than average
+
+================================================================================
+                                   END OF REPORT
+================================================================================
